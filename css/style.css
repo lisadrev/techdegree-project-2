@@ -6,4 +6,69 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 1.125em;
+  line-height: 1.5;
+}
+
+p {
+  color: slategrey;
+}
+
+address{
+  line-height: 2;
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+}
+
+
+address a {
+  color: slategrey;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+header,
+footer {
+  background-color: whitesmoke;
+  padding: 20px 10px;
+}
+
+li {
+  display: block;
+  text-transform: uppercase;
+  background-color: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 5px;
+  margin-left: -40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+section{
+  padding-bottom: 1.25em;
+}
+
+.profile-image{
+  max-width: 70%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
