@@ -11,7 +11,13 @@ body{
   line-height: 1.5;
 }
 
-li {
+.name {
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+}
+
+.main-nav li {
   display: block;
   text-transform: uppercase;
   background-color: white;
@@ -26,19 +32,22 @@ li {
   color: #4a4a4a;
 }
 
-.name {
-  font-family: 'PT Sans', sans-serif;
-  letter-spacing: 1px;
-  color: #4a4a4a;
+
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
 }
+
 /*"portfolio"heading  */
 h3 {
   font-family: 'PT Sans', sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  /* padding-top: 30px; */
+  padding-bottom: 30px;
   color: #4a4a4a;
 }
 
@@ -49,6 +58,7 @@ h2 {
 
 p {
   color: slategrey;
+  font-size: 1.125rem;
 }
 
 address{
@@ -63,21 +73,17 @@ address a {
   font-style: normal;
 }
 
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
+
 
 img {
   width: 100%;
 }
 
 header,
-footer {
+footer{
   background-color: #fafafa;
-  padding: 30px 10px;
+  padding: 30px 5px;
 }
-
 
 
 section{
@@ -95,9 +101,19 @@ a {
   color: #4a4a4a;
 }
 
+li {
+  list-style: none;
+}
+
 
 /*----------------------Base Layout Styles-------------------------  */
-#navbar-name {
+
+.footer-nav{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#footer-name {
   font-family: 'PT Sans', sans-serif;
   font-size: .9em;
   letter-spacing: 1px;
@@ -105,8 +121,8 @@ a {
   float: left;
 }
 
-
-#navbar-top {
+.footer-nav,
+#footer-top {
   font-family: 'PT Sans', sans-serif;
   font-size: .9em;
   letter-spacing: 1px;
@@ -114,11 +130,13 @@ a {
   float: right;
   color: #4a4a4a;
 }
-/* 
-.navbar {
-  padding-top: 1em;
-  padding-bottom: 1em;
-} */
+
+#footer-home,
+#footer-portfolio,
+#footer-contact {
+  display: none;
+}
+
 
 /*----------------------Float Clearfix-------------------------  */
 
@@ -131,12 +149,21 @@ a {
 /*----------------------Media Queries-------------------------  */
 
 @media (min-width: 768px) {
-  name {
+  .wrapper {
+    width: 90%
+    max-width: 1000px;
+  }
+
+  .name {
     display: block;
   }
 
-  ul,
-  ul li {
+  .main-nav {
+    text-align: center;
+    display: block;
+  }
+
+  .main-nav li {
     display: inline-block;
     margin-left: -4px;
     margin-top: 0;
@@ -145,6 +172,7 @@ a {
     padding-bottom: 20px;
     text-align: center;
     background-color: inherit;
+    font-size: 1rem;
   }
 
   .profile-image {
@@ -154,13 +182,15 @@ a {
     padding-right: 15px;
     padding-bottom: 30px;
     padding-top: 0;
-
+    background-position: red;
   }
 
   header p {
     text-align: left;
     margin-top: 0;
     padding-left: 15px;
+    overflow-x: hidden;
+    font-size: 1.25rem;
   }
 
   section {
@@ -181,14 +211,56 @@ a {
     font-size: 1.125rem;
   }
 
+  footer {
+    padding-top: 15px;
+  }
+
   footer p {
     padding-left: 6.25rem;
     padding-right: 6.25rem;
+    font-size: 1.25rem;
   }
+
+
+  .footer-nav {
+    float: right;
+  }
+
+  #footer-home,
+  #footer-portfolio,
+  #footer-contact {
+    text-align: right;
+    display: inline-block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 4px;
+    margin-left: 8px;
+  }
+
+    #footer-top {
+      display: none;
+    }
 
 }
 
-
 @media (min-width: 1024px) {
+  section {
+    width: 33.3%;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+.name,
+.main-nav,
+.main-nav li {
+    display: inline-block;
+    text-align: left;
+  }
+
+
+
+  }
 
 }

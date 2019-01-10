@@ -11,7 +11,7 @@
   <body>
       <header class="clearfix">
         <h1 class="name">Lisa Drevillon</h1>
-        <ul>
+        <ul class="main-nav">
           <li>Home</li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact </a></li>
@@ -19,40 +19,42 @@
           <img class="profile-image" src="images/responsive-layout-profile.png" alt="Cartoon Profile Image.">
           <p>Hi! I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
       </header>
-    <div id="portfolio" class ="wrapper" class="clearfix">
-      <h3>Portfolio </h3>
-      <section>
-        <img src="images/portfolio-1.png" alt="Folder Icon">
-        <h2>Marketing Page</h2>
-        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-2.png" alt="Browser with Search Engine">
-        <h2>Search Page</h2>
-        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-3.png" alt="Comparative Table">
-        <h2>Travel App</h2>
-        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-4.png" alt="Map">
-        <h2>Map of Favorite Spots</h2>
-        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-5.png" alt="Photo Gallery.">
-        <h2>Photo Gallery</h2>
-        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-      </section>
-      <section>
-        <img src="images/portfolio-6.png" alt="Abstract Calculator.">
-        <h2>Calculator</h2>
-        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-      </section>
-      </div>
-        <footer id="contact" class="clearfix">
+    <div id="portfolio" class="clearfix">
+      <main class="wrapper">
+        <h3>Portfolio </h3>
+        <section>
+          <img src="images/portfolio-1.png" alt="Folder Icon">
+          <h2>Marketing Page</h2>
+          <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+        </section>
+        <section>
+          <img src="images/portfolio-2.png" alt="Browser with Search Engine">
+          <h2>Search Page</h2>
+          <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+        </section>
+        <section>
+          <img src="images/portfolio-3.png" alt="Comparative Table">
+          <h2>Travel App</h2>
+          <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+        </section>
+        <section>
+          <img src="images/portfolio-4.png" alt="Map">
+          <h2>Map of Favorite Spots</h2>
+          <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+        </section>
+        <section>
+          <img src="images/portfolio-5.png" alt="Photo Gallery.">
+          <h2>Photo Gallery</h2>
+          <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+        </section>
+        <section>
+          <img src="images/portfolio-6.png" alt="Abstract Calculator.">
+          <h2>Calculator</h2>
+          <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        </section>
+      </main>
+    </div>
+    <footer id="contact" class="clearfix">
           <h3>Contact</h3>
           <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
           <address>
@@ -61,10 +63,13 @@
             <a href="mailto:lisadrevillon@gmail.com">Email  <strong>lisadrevillon@gmail.com </strong></a>
           </address>
           <hr>
-          <aside class="navbar">
-            <p id="navbar-name"> <a href="#top">Lisa Drevillon </a> </p>
-            <P id="navbar-top"> <a href="#top">Back to top </a> </p>
-          </aside>
-        </footer>
+            <h3 id="footer-name"> <a href="#top">Lisa Drevillon </a> </h3>
+            <ul class="footer-nav">
+              <li id="footer-top"> <a href="#top">Back to top </a> </li>
+              <li id="footer-home"> <a href="#top">Home </a> </li>
+              <li id="footer-portfolio"> <a href="#portfolio">Portfolio </a> </li>
+              <li id="footer-contact">  <a href="#contact">Contact </a> </li>
+            </ul>
+    </footer>
   </body>
 </html>
