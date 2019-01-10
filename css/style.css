@@ -1,5 +1,5 @@
 
-
+/*----------------------Base Element Styles-------------------------  */
 * {
   box-sizing: border-box;
 }
@@ -7,8 +7,44 @@
 body{
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  font-size: 1.125em;
+  font-size: 1.25em;
   line-height: 1.5;
+}
+
+li {
+  display: block;
+  text-transform: uppercase;
+  background-color: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 5px;
+  margin-left: -40px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.name {
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+}
+/*"portfolio"heading  */
+h3 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #4a4a4a;
+}
+
+h2 {
+  font-size: 1.25em;
+  color: #4a4a4a;
 }
 
 p {
@@ -38,21 +74,11 @@ img {
 
 header,
 footer {
-  background-color: whitesmoke;
-  padding: 20px 10px;
+  background-color: #fafafa;
+  padding: 30px 10px;
 }
 
-li {
-  display: block;
-  text-transform: uppercase;
-  background-color: white;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin-top: 5px;
-  margin-left: -40px;
-  text-align: center;
-  font-weight: bolder;
-}
+
 
 section{
   padding-bottom: 1.25em;
@@ -60,15 +86,109 @@ section{
 
 .profile-image{
   max-width: 70%;
+  padding-top: 35px;
+  padding-bottom:15px;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #4a4a4a;
 }
+
+
+/*----------------------Base Layout Styles-------------------------  */
+#navbar-name {
+  font-family: 'PT Sans', sans-serif;
+  font-size: .9em;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+  float: left;
+}
+
+
+#navbar-top {
+  font-family: 'PT Sans', sans-serif;
+  font-size: .9em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  float: right;
+  color: #4a4a4a;
+}
+/* 
+.navbar {
+  padding-top: 1em;
+  padding-bottom: 1em;
+} */
+
+/*----------------------Float Clearfix-------------------------  */
 
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+/*----------------------Media Queries-------------------------  */
+
+@media (min-width: 768px) {
+  name {
+    display: block;
+  }
+
+  ul,
+  ul li {
+    display: inline-block;
+    margin-left: -4px;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: inherit;
+  }
+
+  .profile-image {
+    float: right;
+    width: 40%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-top: 0;
+
+  }
+
+  header p {
+    text-align: left;
+    margin-top: 0;
+    padding-left: 15px;
+  }
+
+  section {
+    width: 50%;
+    float: left;
+    padding-left: .25em;
+    padding-right: .25em;
+  }
+
+  section p {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  footer p {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
 }

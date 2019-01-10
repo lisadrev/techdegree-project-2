@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> responsive-website </title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header>
-        <h1> <strong>Lisa Drevillon</strong></h1>
+      <header class="clearfix">
+        <h1 class="name">Lisa Drevillon</h1>
         <ul>
           <li>Home</li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -19,8 +19,8 @@
           <img class="profile-image" src="images/responsive-layout-profile.png" alt="Cartoon Profile Image.">
           <p>Hi! I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
       </header>
-    <div id="portfolio" class ="wrapper">
-      <h2>Portfolio</h2>
+    <div id="portfolio" class ="wrapper" class="clearfix">
+      <h3>Portfolio </h3>
       <section>
         <img src="images/portfolio-1.png" alt="Folder Icon">
         <h2>Marketing Page</h2>
@@ -52,7 +52,7 @@
         <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
       </section>
       </div>
-        <footer id="contact">
+        <footer id="contact" class="clearfix">
           <h3>Contact</h3>
           <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
           <address>
@@ -61,10 +61,10 @@
             <a href="mailto:lisadrevillon@gmail.com">Email  <strong>lisadrevillon@gmail.com </strong></a>
           </address>
           <hr>
-          <div class="navbar">
-            <p> Student name </p>
-            <P> Back to the top </p>
-          </div>
+          <aside class="navbar">
+            <p id="navbar-name"> <a href="#top">Lisa Drevillon </a> </p>
+            <P id="navbar-top"> <a href="#top">Back to top </a> </p>
+          </aside>
         </footer>
   </body>
 </html>
