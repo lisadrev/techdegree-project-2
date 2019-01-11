@@ -37,7 +37,6 @@ body{
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  padding-top: 30px;
 }
 
 /*"portfolio"heading  */
@@ -46,8 +45,8 @@ h3 {
   font-size: 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  /* padding-top: 30px; */
   padding-bottom: 30px;
+  padding-top: 15px;
   color: #4a4a4a;
 }
 
@@ -101,9 +100,37 @@ a {
   color: #4a4a4a;
 }
 
+a:hover {
+  color: deepskyblue;
+}
+
+
 li {
   list-style: none;
 }
+
+.skills {
+  color: slategrey;
+  font-size: 1.125rem;
+  text-align: center;
+  vertical-align: top;
+  display: block;
+  padding: 30px 20px;
+  margin: 10px auto;
+  background-color: #fafafa;
+  width: 80%
+}
+
+ul {
+  padding-left: 0;
+}
+
+
+footer {
+  margin-top: 40px;
+}
+
+
 
 
 /*----------------------Base Layout Styles-------------------------  */
@@ -115,11 +142,12 @@ li {
 
 #footer-name {
   font-family: 'PT Sans', sans-serif;
-  font-size: .9em;
+  font-size: 1em;
   letter-spacing: 1px;
   color: #4a4a4a;
   float: left;
   text-transform: capitalize;
+  margin-top: 0px;
 }
 
 .footer-nav,
@@ -134,7 +162,8 @@ li {
 
 #footer-home,
 #footer-portfolio,
-#footer-contact {
+#footer-contact,
+#footer-skills {
   display: none;
 }
 
@@ -151,7 +180,7 @@ li {
 
 @media (min-width: 768px) {
   .wrapper {
-    width: 90%
+    width: 90%;
     max-width: 1000px;
   }
 
@@ -162,6 +191,7 @@ li {
 
   .name {
     display: block;
+    color: deepskyblue;
   }
 
   .main-nav {
@@ -188,7 +218,6 @@ li {
     padding-right: 15px;
     padding-bottom: 30px;
     padding-top: 0;
-    background-position: red;
   }
 
   header p {
@@ -216,6 +245,13 @@ li {
     font-size: 1.125rem;
   }
 
+  .skills {
+  display: inline-block;
+  width: 40%;
+  margin-right: 10px;
+
+  }
+
   footer {
     padding-top: 15px;
   }
@@ -238,7 +274,8 @@ li {
 
   #footer-home,
   #footer-portfolio,
-  #footer-contact {
+  #footer-contact,
+  #footer-skills {
     text-align: right;
     display: inline-block;
     font-family: 'PT Sans', sans-serif;
@@ -275,6 +312,10 @@ li {
 
 .main-nav li {
   display: inline-block;
+}
+
+.skills {
+  width: 20%;
 }
 
 header {
