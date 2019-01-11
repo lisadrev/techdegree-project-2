@@ -119,6 +119,7 @@ li {
   letter-spacing: 1px;
   color: #4a4a4a;
   float: left;
+  text-transform: capitalize;
 }
 
 .footer-nav,
@@ -152,6 +153,11 @@ li {
   .wrapper {
     width: 90%
     max-width: 1000px;
+  }
+
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .name {
@@ -201,7 +207,6 @@ li {
   }
 
   section p {
-    padding-left: 15px;
     padding-right: 15px;
     margin-top: 0px;
     font-size: 1rem;
@@ -224,6 +229,11 @@ li {
 
   .footer-nav {
     float: right;
+    margin-right: 15px;
+  }
+
+  #footer-name {
+    margin-left: 15px;
   }
 
   #footer-home,
@@ -242,7 +252,6 @@ li {
     #footer-top {
       display: none;
     }
-
 }
 
 @media (min-width: 1024px) {
@@ -252,15 +261,28 @@ li {
     padding-right: .5rem;
   }
 
-.name,
-.main-nav,
+.name {
+  float: left;
+  font-size: 1.25em;
+  margin: 0;
+  display: block;
+  padding: 20px
+}
+
+.main-nav {
+  float: right;
+}
+
 .main-nav li {
-    display: inline-block;
-    text-align: left;
-  }
+  display: inline-block;
+}
 
+header {
+  padding: 25px;
+}
 
-
-  }
+footer {
+  padding-bottom: 0;
+}
 
 }
